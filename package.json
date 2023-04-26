@@ -44,6 +44,7 @@
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
     "test": "vitest",
+    "test:ts": "vitest typecheck",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
@@ -60,7 +61,9 @@
     "typescript": "^5.0.3",
     "unbuild": "^1.2.0",
     "vite": "^4.2.1",
-    "vitest": "^0.29.8"
+    "vitest": "^0.29.8",
+    "vue": "^3.2.47",
+    "zod": "^3.21.4"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
