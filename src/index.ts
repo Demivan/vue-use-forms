@@ -2,6 +2,7 @@ import type zod from 'zod'
 
 import type { ComputedRef, WritableComputedRef } from 'vue'
 import { computed, reactive, shallowRef, watch } from 'vue'
+import type { FieldValues, Path, PathValue } from './types/fields'
 
 interface Field<T> {
   readonly value: WritableComputedRef<T>
